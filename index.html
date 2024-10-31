@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- header -->
+<div class="top">
+    <div class="container">
+        <div class="flex">
+            <div class="leftbar">
+                <div class="logo"><a href="#"><img src="img/Logo.svg" alt="logo"></a></div>
+                <div class="searchbox"><input class="search" type="text" placeholder="&#xF002; Search"style="font-family:Arial, FontAwesome; padding: 16px"/></div>
+            </div>
+            <div class="rightbar">
+                <div class="menubar">
+                    <ul class="ulmenu">
+                        <li class="limenu"><a href="#">Home</a></li>
+                        <li class="limenu"><a href="#">About</a></li>
+                        <li class="limenu"><a href="#">Contact Us</a></li>
+                        <li class="limenu"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="iconbar">
+                    <div class="iconbox">
+                        <div class="iconlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="iconlist cart"><i class="fa-solid fa-cart-shopping" id="open_modal"></i>
+                                <div class="cart_amount">0</div>
+
+
+                                <div class="cart_modal_box active" id="cart_modal_box">
+                                    <div class="modal_close"><i id="modal_close" class="fa-solid fa-xmark"></i></div>
+                                    <div class="cart_wrapper">
+                                        <div class="cart_wrapper_title">
+                                            <h2>Your Order:</h2>
+                                            <div class="empty_cart" data-cart-empty><h3>Cart is empty</h3></div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="cartWrapper">
+                                        
+                                    </div>
+                                
+
+                                    <div class="order_form none" id="order_form">
+                                        <div class="cart_total">Total: <span class="total_price">0</span> $</div>
+                                        <button class="order_btn">Order</button> 
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        <div class="iconlist"><i class="fa-regular fa-user"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>  
+<!-- header end -->
+
+  <!-- main -->
+<main>
+
+<div class="container-main">
+    <div class="leftbox">
+        <div class="title-top">
+            Pro.Beyond.
+        </div>
+        <div class="title">IPhone 14 <span style="font-family: sfpro-bold;">Pro</span></div>
+        <div class="descr">Created to change everything for the better. For everyone</div><br><br>
+        <a href="#"><span class="button-pro">Shop Now</span></a>
+    </div>
+    <div class="rightbox"><img src="img/Iphone.png" alt=""></div>
+
+</div>
+<div class="wrapper">
+    <div class="leftwrap">
+        <div class="box-ps5">
+            <img src="img/ps5.png" alt="">
+            <div class="desc-ps5">
+                <div class="title-ps5">
+                    <span style="font-family: sfpro-bold;">Playstation 5</span>
+                </div>
+                <div class="desc-ps5-inner">Incredibly powerful CPUs, GPUs, and an SSD with<br> integrated I/O will redefine your PlayStation experience</div>
+            </div>
+        </div>
+        <div class="leftwrap-inner">
+            <div class="airpods">
+                <div class="img-air"><img src="img/hero.png" alt=""></div>
+                <div class="air-inner">
+                    <div class="air-title">Apple <br>
+                        AirPods <span style="font-family: sfpro-bold;">Max</span> </div>
+                    <div class="air-desc">Computational audio.<br> Listen, it's powerful</div>
+                </div>
+            </div>
+            <div class="visionpro">
+                <div class="img-vis"><img src="img/vision.png" alt=""></div>
+                    <div class="vis-inner">
+                        <div class="vis-title">Apple <br>
+                            Vision <span style="font-family: sfpro-bold;">Pro</span> </div>
+                        <div class="air-desc">An immersive way to<br> experience entertainment</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightwrap">
+        <div class="mac-desc">
+            <div class="mac-title">Macbook <span style="font-family: sfpro-bold;">Air</span></div>
+            <div class="mac-descr">The new 15‑inch MacBook Air makes room for more of what<br> you love with a spacious Liquid Retina display.</div><br><br>
+            <a href="#"><span class="mac-button"> Shop Now</span></a>
+        </div>
+        <div class="mac-img">
+            <img src="img/MacBook Pro 14.png" alt="">
+        </div>
+    </div>
+</div>
+ <!-- main end -->
+
+<!-- categories -->
+<div class="categories-bc">
+    <div class="container">
+        <div class="post-cat">
+            <div class="title-cat">Browse By Category</div>
+            <div class="arrows">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i> </a>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="icons">
+            <div class="cat">
+                <div class="ic" style="background-image: url(icons/Phones.svg);"></div>
+                <div class="ic-title">Phones</div>
+            </div>
+            <div class="cat">
+                <div class="ic" style="background-image: url(icons/Smart\ Watches.svg);"></div>
+                <div class="ic-title">Smart Watches</div>
+            </div>
+            <div class="cat">
+                <div class="ic" style="background-image: url(icons/Cameras.svg);"></div>
+                <div class="ic-title">Cameras</div>
+            </div>
+            <div class="cat">
+                <div class="ic" style="background-image: url(icons/Headphones.svg);"></div>
+                <div class="ic-title">Headphones</div>
+            </div>
+            <div class="cat">
+                <div class="ic" style="background-image: url(icons/Computers.svg);"></div>
+                <div class="ic-title">Computers</div>
+            </div>
+            <div class="cat">
+                <div class="ic" style="background-image: url(icons/Gaming.svg);"></div>
+                <div class="ic-title">Gaming</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- categories end -->
+
+<!-- products -->
+<div class="container">
+    <div class="goods">
+        <div class="goods-title">
+            <ul>
+                <li class="goods-li _active" tabindex="1">New Arrival</li>
+                <li class="goods-li" tabindex="2">Bestseller</li>
+                <li class="goods-li" tabindex="3">Featured Products</li>
+            </ul>
+        </div>
+        <div class="goods-box">
+            <div class="goods-grid" data-id="01">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Iphone 14 pro 1.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro Max 128GB <br>Deep Purple (MQ9T3RX/A)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="02"> 
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Camera.png" alt=""></div>
+                <div class="goods-desc">Blackmagic Pocket Cinema<br> Camera 6k</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">2000</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="03"> 
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Watch.png" alt=""></div>
+                <div class="goods-desc">Apple Watch Series 9 GPS 41mm<br> Starlight Aluminium Case</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">389</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="04">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Airpod.png" alt=""></div>
+                <div class="goods-desc">AirPods Max Silver</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">389</span><span>&#36</span></p>549
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="05">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Galaxy watch.png" alt=""></div>
+                <div class="goods-desc">Samsung Galaxy Watch6 Classic<br> 47mm Black</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">389</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="06"> 
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Samsung Galaxy.png" alt=""></div>
+                <div class="goods-desc">Galaxy Z Fold5 Unlocked | 256GB<br> | Phantom Black</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1799</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="07"> 
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Ipad.png" alt=""></div>
+                <div class="goods-desc">Apple iPad 9 10.2" 64GB Wi-Fi<br> Silver (MK2L3) 2021</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">779</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="08"> 
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/Buds.png" alt=""></div>
+                <div class="goods-desc">Galaxy Buds FE<br>
+                    Graphite</div>
+                    <div class="goods_attribute">#53459358345</div>
+                    <p><span class="goods-price">200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- products end -->
+
+<!-- popular goods -->
+
+<div class="wrapper-grid">
+    <div class="popular-box">
+        <div class="popular-img"><img src="img/products/Group 1.png" alt=""></div>
+        <div class="popular-desc"><span>Popular Products</span><br>
+            iPad combines a magnificent 10.2-inch Retina<br> display, incredible performance, multitasking and<br> ease of use.</div>
+        <a href="#"><span class="mac-button"> Shop Now</span></a>
+    </div>
+    <div class="popular-box box-color2">
+        <div class="popular-img"><img src="img/products/ipad2.png" alt=""></div>
+        <div class="popular-desc"><span>Ipad Pro</span><br>
+            iPad combines a magnificent 10.2-inch Retina<br> display, incredible performance, multitasking and<br> ease of use.</div>
+        <a href="#"><span class="mac-button"> Shop Now</span></a>
+    </div>
+    <div class="popular-box box-color3">
+        <div class="popular-img"><img src="img/products/Galaxy.png" alt=""></div>
+        <div class="popular-desc"><span>Samsung Galaxy </span><br>
+            iPad combines a magnificent 10.2-inch Retina<br> display, incredible performance, multitasking and<br> ease of use.</div>
+        <a href="#"><span class="mac-button"> Shop Now</span></a>
+    </div>
+    <div class="popular-box box-color4">
+        <div class="popular-img"><img src="img/products/Macbook2.png" alt=""></div>
+        <div class="popular-desc"><span>Macbook Pro</span><br>
+            iPad combines a magnificent 10.2-inch Retina<br> display, incredible performance, multitasking and<br> ease of use.</div>
+        <a href="#"><span class="mac-button2"> Shop Now</span></a>
+    </div>
+</div>
+ <!-- popular end -->
+
+<!-- discount -->
+
+<div class="discount-container">
+    <div class="container">
+        <div class="disc-title">Discounts up to -50%</div>
+        <div class="goods-box-disc">
+            <div class="goods-grid"> 
+                <div class="goods-like"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                <div class="goods-img"><img src="img/products/Iphone 14 pro gold.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 512GB Gold<br> (MQ233)</div>
+                <div class="goods-price">$1437</div>
+                <div class="goods-buy"><a href="#"><span>Buy Now</span></a></div>
+            </div>
+            <div class="goods-grid"> 
+                <div class="goods-like"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                <div class="goods-img"><img src="img/products/Airpod.png" alt=""></div>
+                <div class="goods-desc">AirPods Max Silver</div>
+                <div class="goods-price">$549</div>
+                <div class="goods-buy"><a href="#"><span>Buy Now</span></a></div>
+            </div>
+            <div class="goods-grid"> 
+                <div class="goods-like"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                <div class="goods-img"><img src="img/products/Watch.png" alt=""></div>
+                <div class="goods-desc">Apple Watch Series 9 GPS 41mm<br> Starlight Aluminium Case</div>
+                <div class="goods-price">$399</div>
+                <div class="goods-buy"><a href="#"><span>Buy Now</span></a></div>
+            </div>
+            <div class="goods-grid"> 
+                <div class="goods-like"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                <div class="goods-img"><img src="img/products/Iphone 14 pro titan.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 1TB titan<br> (MQ2V3)</div>
+                <div class="goods-price">$1499</div>
+                <div class="goods-buy"><a href="#"><span>Buy Now</span></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- discount end -->
+
+<!-- big summer -->
+<div class="bigbox">
+    <div class="bigbox-title">
+        <h1>Big Summer <span>Sale</span></h1>
+        <h2>Commodo fames vitae vitae leo mauris in. Eu consequat.</h2>
+        <p><a href="#"><span class="mac-button2"> Shop Now</span></a></p>
+    </div>
+</div>
+<!-- big summer end -->
+
+</main>
+<!-- footer -->
+<footer>
+<div class="bottom">
+    <div class="container">
+        <div class="bottom-inner">
+            <div class="cyber-box">
+                <a href="#"><img src="img/Logo(white).png" alt="logo"></a>
+                <div class="cyber-desc">We are a residential interior design firm located in Portland.          Our<br> boutique-studio offers more than
+                </div>
+            </div>
+            <div class="footer-box">
+                <div class="footer-title">Services</div>
+                <ul>
+                    <li><a href="#">Bonus program </a></li>
+                    <li><a href="#">Gift cards </a></li>
+                    <li><a href="#">Credit and payment </a> </li>
+                    <li><a href="#">Service contracts </a></li>
+                    <li><a href="#">Non-cash account </a></li>
+                    <li><a href="#">Payment </a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <div class="footer-title">Assistance to the buyer</div>
+                <ul>
+                    <li><a href="#">Find an order </a></li>
+                    <li><a href="#">Terms of delivery</a></li>
+                    <li><a href="#">Exchange and return of goods </a></li>
+                    <li><a href="#">Guarantee </a></li>
+                    <li><a href="#">Frequently asked questions </a></li>
+                    <li><a href="#">Terms of use of the site </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="socials">
+            <div><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+            <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+            <div><a href="#"><i class="fa-brands fa-tiktok"></i></a></div>
+            <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- footer -->
+ <style>
+ </style>
+ <script>
+// <-----переключатель активной категории
+const links = document.querySelectorAll('.goods-li');
+for (let link of links) {
+  link.addEventListener('click', () => {
+    let activeLink = document.querySelector('.goods-li._active');
+    if (activeLink) {
+      activeLink.classList.remove('_active');
+    }
+    link.classList.add('_active');
+  })
+}
+// ----->
+
+
+ </script>
+<script src="js/calcCart.js"></script>
+<script src="js/cart-status.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/cart.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="page">
+<!-- header -->
+<div class="top">
+    <div class="container">
+        <div class="flex">
+            <div class="leftbar">
+                <div class="logo"><a href="index.html"><img src="img/Logo.svg" alt="logo"></a></div>
+                <div class="searchbox"><input class="search" type="text" placeholder="&#xF002; Search"style="font-family:Arial, FontAwesome; padding: 16px"/></div>
+            </div>
+            <div class="rightbar">
+                <div class="menubar">
+                    <ul class="ulmenu">
+                        <li class="limenu"><a href="#">Home</a></li>
+                        <li class="limenu"><a href="#">About</a></li>
+                        <li class="limenu"><a href="#">Contact Us</a></li>
+                        <li class="limenu"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="iconbar">
+                    <div class="iconbox">
+                        <div class="iconlist"><i class="fa-regular fa-heart"></i></div>
+                            <div class="iconlist cart"><img src="./icons/Cart1.svg" id="open_modal" alt="">
+                                <div class="cart_amount">0</div>
+
+
+                                <div class="cart_modal_box active" id="cart_modal_box">
+                                    <div class="modal_close"><i id="modal_close" class="fa-solid fa-xmark"></i></div>
+                                    <div class="cart_wrapper">
+                                        <div class="cart_wrapper_title">
+                                            <h2>Your Order:</h2>
+                                            <div class="empty_cart" data-cart-empty><h3>Cart is empty</h3></div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="cartWrapper">
+                                        
+                                    </div>
+                                
+
+                                    <div class="order_form none" id="order_form">
+                                        <div class="cart_total">Total: <span class="total_price">0</span> $</div>
+                                        <button class="order_btn">Order</button> 
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        <div class="iconlist"><i class="fa-regular fa-user"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>  
+<!-- header end -->
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i></li>
+            <li><a href="#">Catalog</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i></li>
+            <li><a href="#">Smartphones</a></li>
+        </ul>
+    </div>
+    <div class="catalog-box">
+        <div class="catalog-top">
+            <div class="top-left">
+                Selected Products: <span>85</span>
+            </div>
+            <div class="top-right">
+                <div class="filterlist">
+                    <label for="filterlist">Sort by:</label>
+                    <select id="filterlist" name="filterlist" form="filterlist">
+                        <option value="rating">Rating</option>
+                        <option value="price">Price</option>
+                        <option value="reviews">Reviews</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="catalog-main">
+        <!-- leftside -->
+        <div class="catalog-leftside">
+
+            <div class="accordion">
+                <div data-tab="tab-1" class="accordion__title">
+                    <h3>Brand</h3>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div id="tab-1" class="accordion__content">
+                    <div class="searchbox">
+                        <input class="search-good" type="text" placeholder="&#xF002; Search"style="font-family:Arial, FontAwesome; padding: 16px"/>
+                    </div>
+                    <form action="#" class="form-group">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Apple" name="Apple" checked>
+                            <label for="Apple">Apple</label> <span>110</span></div>
+                        <div>
+                            <input type="checkbox" id="Samsung" name="" value="">
+                            <label for="Samsung">Samsung</label> <span>125</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Xiaomi" name="" value="">
+                            <label for="Xiaomi">Xiaomi</label> <span>68</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Poco" name="" value="">
+                            <label for="Poco">Poco</label> <span>44</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="OPPO" name="" value="">
+                            <label for="OPPO">OPPO</label> <span>36</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Honor" name="" value="">
+                            <label for="Honor">Honor</label> <span>10</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Motorola" name="" value="">
+                            <label for="Motorola">Motorola</label> <span>34</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Nokia" name="" value="">
+                            <label for="Nokia">Nokia</label> <span>22</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Realme" name="" value="">
+                            <label for="Realme">Realme</label> <span>35</span></div>  
+                    </form>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-6" class="accordion__title">
+                    <h3>RAM Memory</h3>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div id="tab-6" class="accordion__content">
+                    
+                    <form action="#" class="form-group">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="1_gb" name="1_gb">
+                            <label for="1_gb">1GB</label> <span>4</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="2_gb" name="2_gb">
+                            <label for="2_gb">2GB</label> <span>20</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="3_gb" name="3_gb">
+                            <label for="3_gb">3GB</label> <span>25</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="4_gb" name="4_gb">
+                            <label for="4_gb">4GB</label> <span>14</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="6_gb" name="6_gb">
+                            <label for="6_gb">6GB</label> <span>10</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="8_gb" name="8_gb">
+                            <label for="8_gb">8GB</label> <span>1</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="12_gb" name="12_gb">
+                            <label for="12_gb">12GB</label> <span>2</span>
+                        </div>
+                    
+                          
+                    </form>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div data-tab="tab-5" class="accordion__title">
+                    <h3>Hard Drive</h3>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div id="tab-5" class="accordion__content">
+                    
+                    <form action="#" class="form-group">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="128gb" name="128gb">
+                            <label for="128gb">128GB</label> <span>10</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="16gb" name="16gb">
+                            <label for="16gb">16GB</label> <span>13</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="256gb" name="256gb">
+                            <label for="256gb">256GB</label> <span>5</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="32gb" name="32gb">
+                            <label for="32gb">32GB</label> <span>15</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="64gb" name="64gb">
+                            <label for="64gb">64GB</label> <span>25</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="8gb" name="8gb">
+                            <label for="8gb">8GB</label> <span>25</span>
+                        </div>
+                          
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="accordion">
+                <div data-tab="tab-3" class="accordion__title">
+                    <h3>Screen type</h3>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div id="tab-3" class="accordion__content">
+                    
+                    <form action="#" class="form-group">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="amole" name="amoled" value="">
+                            <label for="amoled">AMOLED</label><span>25</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="SuperAMOLED" name="SuperAMOLED" value="" checked>
+                            <label for="SuperAMOLED">Super AMOLED</label><span>25</span>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ips" name="ips" value="">
+                            <label for="ips">IPS</label><span>15</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="oled" name="oled" value="">
+                            <label for="oled">OLED</label><span>20</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="tft" name="tft" value="">
+                            <label for="tft">TFT</label><span>10</span>
+                        </div>
+                        
+                        
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="accordion">
+                <div data-tab="tab-4" class="accordion__title">
+                    <h3>Screen size</h3>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div id="tab-4" class="accordion__content">
+                    
+                    <form action="#" class="form-group">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss1" name="ss1" checked>
+                            <label for="ss1">4,5</label> <span>4</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss2" name="ss2" >
+                            <label for="ss2">4,7</label> <span>17</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss3" name="ss3" >
+                            <label for="ss3">5</label> <span>9</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss4" name="ss4" >
+                            <label for="ss4">5,1</label> <span>3</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss5" name="ss5" >
+                            <label for="ss5">5,2</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss6" name="ss6" >
+                            <label for="ss6">5,2</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss7" name="ss7" >
+                            <label for="ss7">5,5</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss8" name="ss8" >
+                            <label for="ss8">5,65</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss9" name="ss9" >
+                            <label for="ss9">5,7</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss10" name="ss10" >
+                            <label for="ss10">5,8</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss11" name="ss11" >
+                            <label for="ss11">5,86</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss12" name="ss12" >
+                            <label for="ss12">6</label> <span>3</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="ss13" name="ss13" >
+                            <label for="ss13">6,06</label> <span>3</span>
+                        </div>
+                            
+                          
+                    </form>
+                </div>
+            </div>
+            <div class="accordion">
+                <div data-tab="tab-2" class="accordion__title">
+                    <h3>Battery capacity</h3>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div id="tab-2" class="accordion__content">
+                    
+                    <form action="#" class="form-group">
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Li-ion" name="Li-ion" checked>
+                            <label for="Li-ion">Li-ion</label><span>25</span></div>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="Li-pol" name="Li-pol">
+                            <label for="Li-pol">Li-pol</label><span>25</span></div>                          
+                    </form>
+
+                </div>
+            </div>
+            
+
+
+
+        </div>
+<!-- leftside end -->
+        <!-- rightside -->
+        <div class="catalog-rightside">
+            <div class="goods-grid" data-id="01">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/1.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 512GB Gold <br> (MQ233)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+                
+            </div>
+            <div class="goods-grid">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/2.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 11 128GB <br> White (MQ233)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="02">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/2.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 11 128GB <br> White (MQ233)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="03">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/3.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 256GB Silver <br> (MQ103)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="04">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/1.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 512GB Gold <br> (MQ233)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="05">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/4.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 128GB Deep <br> Purple (MQ0G3)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="06">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/5.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 256GB Pink <br>(MQ0T3)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="07">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/6.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 256GB <br> Space Black (MQ0T3)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="goods-grid" data-id="08">
+                <div class="goods-like"><i class="fa-regular fa-heart"></i></div>
+                <div class="goods-img"><img class="goods_image" src="img/products/products/3.png" alt=""></div>
+                <div class="goods-desc">Apple iPhone 14 Pro 256GB Silver <br> (MQ103)</div>
+                <div class="goods_attribute">#53459358345</div>
+                <p><span class="goods-price">1200</span><span>&#36</span></p>
+                <button class="goods-buy" data-cart>Buy Now</button>
+            </div>
+            <div class="navpage">
+                <div><i class="fa-solid fa-chevron-left"></i></div>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">12</a></li>
+                </ul>
+                <div><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+    <div class="bottom">
+        <div class="container">
+            <div class="bottom-inner">
+                <div class="cyber-box">
+                    <a href="#"><img src="img/Logo(white).png" alt="logo"></a>
+                    <div class="cyber-desc">We are a residential interior design firm located in Portland.          Our<br> boutique-studio offers more than
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-title">Services</div>
+                    <ul>
+                        <li><a href="#">Bonus program </a></li>
+                        <li><a href="#">Gift cards </a></li>
+                        <li><a href="#">Credit and payment </a> </li>
+                        <li><a href="#">Service contracts </a></li>
+                        <li><a href="#">Non-cash account </a></li>
+                        <li><a href="#">Payment </a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-title">Assistance to the buyer</div>
+                    <ul>
+                        <li><a href="#">Find an order </a></li>
+                        <li><a href="#">Terms of delivery</a></li>
+                        <li><a href="#">Exchange and return of goods </a></li>
+                        <li><a href="#">Guarantee </a></li>
+                        <li><a href="#">Frequently asked questions </a></li>
+                        <li><a href="#">Terms of use of the site </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socials">
+                <div><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                <div><a href="#"><i class="fa-brands fa-tiktok"></i></a></div>
+                <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script>
+    // <-----переключатель активной категории
+    const links = document.querySelectorAll('.goods-li');
+    for (let link of links) {
+      link.addEventListener('click', () => {
+        let activeLink = document.querySelector('.goods-li._active');
+        if (activeLink) {
+          activeLink.classList.remove('_active');
+        }
+        link.classList.add('_active');
+      })
+    }
+    // ----->
+    
+    
+     </script>
+    <script src="js/calcCart.js"></script>
+    <script src="js/cart-status.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+</html>
